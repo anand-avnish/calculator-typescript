@@ -5,13 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/output.css">
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="h-screen w-screen bg-blue-400 p-5 flex items-center justify-center"> 
-        <div class="calc-box bg-white rounded-xl w-1/2 min-w-fit min-h-fit max-w-full h-3/4 max-h-full">
-            Test
+    <div class="h-screen w-screen bg-blue-400 p-5 flex flex-col items-center justify-center font-poppins"> 
+        <h1 class="text-5xl text-center font-bold mb-10">Basic Calculator</h1>
+        <div class="calc-box bg-white rounded-xl w-1/2 min-w-fit min-h-fit max-w-full max-h-full p-5">
+            <form>
+                <div class="flex justify-around items-center flex-wrap py-5">
+                    <input type="number" id="input1" placeholder="First number" class="border-2 border-black p-2 m-2">
+                    <input type="number" id="input2" placeholder="Second number" class="border-2 border-black p-2 m-2">
+                    <div>
+                        <span class="material-symbols-outlined">
+                            arrow_forward
+                        </span>
+                        <input type="number" id="output" placeholder="Result" class="border-2 border-black p-2 m-2" readonly>
+                    </div>
+                </div>
+                <div class="flex justify-evenly items-center flex-wrap py-5">
+                    <button type="button" id="sum" class="sum bg-black text-white w-5/12 p-2 my-2 text-[30px] rounded-xl shadow-lg shadow-[#444]">
+                        +
+                    </button>
+                    <button type="button" class="minus bg-black text-white w-5/12 p-2 my-2 text-[30px] rounded-xl shadow-lg shadow-[#444]">
+                        -
+                    </button>
+                    <button type="button" class="multiply bg-black text-white w-5/12 p-2 my-2 text-[30px] rounded-xl shadow-lg shadow-[#444]">
+                        *
+                    </button>
+                    <button type="button" class="divide bg-black text-white w-5/12 p-2 my-2 text-[30px] rounded-xl shadow-lg shadow-[#444]">
+                        /
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </body>
